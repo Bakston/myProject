@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using System.Text;
+using System.Threading.Tasks.Dataflow;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,7 +21,10 @@ namespace myProject
             InitializeComponent();
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
-            timer.Tick += (object sender, EventArgs e) => {textBlock.Text = DateTime.Now.ToLongTimeString ();};
+            timer.Tick += (object sender, EventArgs e) => {
+                timerBlock.Text = DateTime.Now.ToLongTimeString();
+                dataBlock.Text = DateTime.Now.ToLongDateString();
+                };
             timer.Start();
         }
     }

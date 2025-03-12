@@ -8,6 +8,7 @@
         Foreground="{DynamicResource Theme_TextBrush}"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="textBlock" FontSize="48" Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <TextBlock x:Name="timerBlock" FontSize="50" Margin="10, 10, 10, 10" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <TextBlock x:Name="dataBlock" FontSize="25" Margin="10, 70, 10, 10" HorizontalAlignment="Center" VerticalAlignment="Top" />
     </Grid>
 </Window>
